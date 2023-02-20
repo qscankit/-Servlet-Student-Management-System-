@@ -1,0 +1,33 @@
+package com.ty.student_management_project.service;
+
+import java.util.List;
+
+import com.ty.student_management_project.dao.AccountantDao;
+import com.ty.student_management_project.dto.Accountant;
+
+public class AccountantService {
+	AccountantDao dao = new AccountantDao();
+	
+//	insert method for accountant
+	
+	public void insertAccountant(Accountant accountant) {
+		dao.insertAccountant(accountant);
+	}
+
+//	getByIdEmail method
+	
+	public boolean getByEmail(String email) {
+		return dao.getByEmail(email);
+	}
+	
+//	getByEmailAll method
+	
+	public Accountant getByEmailAll(String email) {
+		return dao.getByEmailAll(email);
+	}
+	
+//	display method
+	public List<Accountant> displayAccountant(){
+		return dao.displayAccountant();
+	}
+}

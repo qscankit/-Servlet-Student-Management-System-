@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Section</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: gray;
+        }
+       
+        .sec1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            left: 400px;
+            top: 100px;
+            border: 5px double black;
+            height: 350px;
+            width: 250px;
+        }
+       
+        .head1{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+         
+        }
+        .btn{
+            margin-top: 10px;
+            display:flex;
+            flex-direction: column;            
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+          
+        }
+        a{
+            display: inline-block;
+            background-color: bisque;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            border: 2px solid black;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <section class="sec1">
+            <div class="head1"><h1>Admin Section</h1></div>
+            <div class="btn">
+            <form action="#">
+            <a href="add_accountant.jsp">Add Accontant</a><br><br>
+            <a href="#">View Accontant</a><br><br>
+            <a href="login_accountant.jsp">Login Accontant</a><br><br>
+            <a href="#">Logout</a>
+        </form>
+            </div>
+        </section>
+    </header>
+</body>
+</html>

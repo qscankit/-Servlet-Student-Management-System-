@@ -1,0 +1,41 @@
+package com.ty.student_management_project.controller;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.ty.student_management_project.dto.Student;
+import com.ty.student_management_project.service.StudentService;
+@SuppressWarnings("serial")
+@WebServlet(value = "/update_student")
+public class UpdateController extends HttpServlet {
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String name = req.getParameter("name");
+		String email = req.getParameter("email");
+		String dob = req.getParameter("dob");
+		String course = req.getParameter("course");
+		double fee = Double.parseDouble(req.getParameter("fee"));
+		double paid = Double.parseDouble(req.getParameter("paid"));
+		double due = Double.parseDouble(req.getParameter("due"));
+		
+		String address = req.getParameter("address");
+		String city = req.getParameter("city");
+		String state = req.getParameter("state");
+		int pin = Integer.parseInt(req.getParameter("pincode"));
+		String country = req.getParameter("country");
+		long contact = Long.parseLong(req.getParameter("contact"));
+		
+		StudentService studentService = new StudentService();
+		Student student = new Student();
+		
+		
+		
+		
+		
+	}
+}

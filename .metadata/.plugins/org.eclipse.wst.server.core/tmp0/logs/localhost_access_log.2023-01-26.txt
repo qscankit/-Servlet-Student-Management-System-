@@ -1,0 +1,4 @@
+127.0.0.1 - - [26/Jan/2023:21:09:32 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [26/Jan/2023:21:09:38 +0530] "GET /servlet-student-management-project/update_student.jsp HTTP/1.1" 200 4265
+0:0:0:0:0:0:0:1 - - [26/Jan/2023:21:09:39 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [26/Jan/2023:21:10:50 +0530] "POST /servlet-student-management-project/update_student.jsp HTTP/1.1" 200 4265

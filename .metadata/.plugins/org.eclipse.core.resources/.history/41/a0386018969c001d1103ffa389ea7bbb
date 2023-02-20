@@ -1,0 +1,9 @@
+package com.ty.student_management_project.controller;
+
+import javax.servlet.annotation.WebServlet;
+
+@SuppressWarnings("serial")
+@WebServlet(value = "/accountant_login")
+public class AccountantLoginController {
+
+}

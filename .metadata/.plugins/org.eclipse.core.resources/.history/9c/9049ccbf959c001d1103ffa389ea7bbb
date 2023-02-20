@@ -1,0 +1,10 @@
+package com.ty.student_management_project.controller;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@SuppressWarnings("serial")
+@WebServlet(value = "/add_accountant" )
+public class AccountantController extends HttpServlet {
+
+}
